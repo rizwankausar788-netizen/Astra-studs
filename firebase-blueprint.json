@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User account and personalized exam preparation records",
+      "type": "object",
+      "properties": {
+        "preferences": { "type": "object", "description": "Target exam date, grade, subjects, learning style" },
+        "materials": { "type": "array", "description": "Uploaded study materials and syllabus notes" },
+        "studyPlan": { "type": "object", "description": "AI-generated daily study tasks and weekly milestones" },
+        "flashcards": { "type": "array", "description": "Active recall flashcards with spaced repetition intervals" },
+        "quizQuestions": { "type": "array", "description": "Quiz questions and history" },
+        "mockExams": { "type": "array", "description": "Timed mock exams and results" },
+        "topicMastery": { "type": "array", "description": "Mastery percentages and detected knowledge gaps" },
+        "timeSpent": { "type": "array", "description": "Study hours logged per subject" },
+        "scoreTrends": { "type": "array", "description": "Historical quiz score trajectory" },
+        "updatedAt": { "type": "string", "description": "Server timestamp of last sync" }
+      }
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User specific personal study dashboard data"
+    }
+  }
+}

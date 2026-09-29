@@ -1,0 +1,6 @@
+{
+  "name": "Astra Exam Prep",
+  "description": "AI-Powered Exam Preparation & Adaptive Study Planner with interactive quizzes, smart flashcards, step-by-step AI tutor, and mock exams.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
